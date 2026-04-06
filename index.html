@@ -4,9 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Uwayo Olga | Full-Stack Developer & Designer</title>
-    <meta name="description"
-        content="Portfolio of Uwayo Olga, showcasing full-stack development projects, UI/UX designs, and technical expertise.">
+    <title>Uwayo Olga | Developer & Designer</title>
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -20,219 +18,289 @@
 
 <body>
 
-    <!-- Navigation -->
-    <nav>
-        <div class="container">
-            <a href="#" class="logo">Uwayo Olga<span class="logo-dot">.</span></a>
-            <div class="menu-toggle" id="mobile-menu">
-                <span></span>
-                <span></span>
-                <span></span>
+    <!-- Header Section (1:1 Replica) -->
+    <header>
+        <div class="nav-container">
+            <a href="#" class="logo-ps">Uwayo Olga<span class="logo-dot">.</span></a>
+            <div class="nav-pill">
+                <a href="#hero" class="active">Home</a>
+                <a href="#work">Work</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
             </div>
-            <ul class="nav-links">
-                <li><a href="#hero">Home</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
+            <div class="nav-actions">
+                <a href="https://wa.me/250780613479" target="_blank" class="book-call-btn">Book a Call</a>
+            </div>
         </div>
-    </nav>
+    </header>
 
     <!-- Hero Section -->
-    <section id="hero" class="hero">
-        <div class="container">
-            <div class="hero-content">
-                <h1>Code with <span class="highlight">purpose.</span></h1>
-                <p>I’m Olga, a software developer building digital systems for people.</p>
-                <div class="hero-btns">
-                    <a href="#projects" class="btn btn-primary">View My Work</a>
+    <main>
+        <div class="hero-glow"></div>
+        <section id="hero" class="hero">
+            <div class="container hero-container-layout">
+                <div class="hero-content">
+                    <div class="status-badge"><span class="badge-dot"></span> Available for projects</div>
+                    <h1>Code with <span class="highlight">purpose.</span></h1>
+                    <p>I’m Olga, a Software Developer passionate about building practical, user-focused solutions.
+                        Skilled in coding, problem-solving, and continuously learning new technologies. Interested in
+                        data-driven systems and impactful digital solutions.</p>
+                    <div class="hero-btns">
+                        <a href="#work" class="btn-primary">View My Work</a>
+                        <a href="mailto:uwayoolga@gmail.com" class="btn-secondary">Get in Touch</a>
+                    </div>
                 </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Projects Section (Horizontal Showcase) -->
-    <section id="projects">
-        <div class="container">
-            <div style="display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 3rem;">
-                <div>
-                    <h2 class="section-title" style="text-align: left; margin-bottom: 0;">Main Projects</h2>
-                    <p style="color: var(--text-secondary); margin-top: 0.5rem;">Swipe or use the arrows to explore my
-                        work in more detail.</p>
-                </div>
-                <div class="carousel-controls">
-                    <button class="nav-btn prev" id="prev-btn">←</button>
-                    <button class="nav-btn next" id="next-btn">→</button>
+                <div class="hero-visual">
+                    <div class="floating-shape shape-1"></div>
+                    <div class="floating-shape shape-2"></div>
                 </div>
             </div>
 
-            <div class="projects-carousel" id="carousel">
+            <a href="#work" class="scroll-indicator">
+                <div class="mouse"></div>
+                <span>Scroll to explore</span>
+            </a>
+        </section>
+
+        <!-- Work / Projects Section -->
+        <section id="work" class="work-section">
+            <div class="container">
+
                 <!-- Project 1: Umurage -->
-                <div class="project-showcase">
-                    <div class="showcase-img">
-                        <div class="browser-frame">
-                            <div class="browser-dots"><span></span><span></span><span></span></div>
-                            <img src="assets/Umurage.png"
-                                alt="Umurage">
+                <div class="project-block">
+                    <div class="project-content">
+                        <h2>Umurage</h2>
+                        <div class="subtitle">
+                            Umurage is a modern financial platform for savings groups in Rwanda. Secure and built for
+                            community growth.
+                        </div>
+                        <ul class="feature-list">
+                            <li><span class="plus">+</span> Instant loan requests & processing</li>
+                            <li><span class="plus">+</span> Digital contribution & audit trails</li>
+                            <li><span class="plus">+</span> Automated financial reporting</li>
+                        </ul>
+
+                        <div class="tech-pills">
+                            <div class="tech-pill">Next.js</div>
+                            <div class="tech-pill">Express</div>
+                            <div class="tech-pill">TypeScript</div>
+                            <div class="tech-pill">Tailwind CSS</div>
+                            <div class="tech-pill">PostgreSQL</div>
+                            <div class="tech-pill">Redis</div>
+                            <div class="tech-pill">PDFKit</div>
+                        </div>
+
+                        <div style="margin-top: 2rem;">
+                            <a href="https://github.com/UwayoOlga/Umurage.git" target="_blank" class="book-call-btn"
+                                style="display: inline-block; padding: 0.5rem 1.5rem; font-size: 0.85rem;">View on
+                                GitHub</a>
                         </div>
                     </div>
-                    <div class="showcase-content">
-                        <div class="tag">FinTech Solution</div>
-                        <h3>Umurage</h3>
-                        <p>A comprehensive digital ecosystem for Rwandan savings groups (Ibimina). Secure, transparent,
-                            and built for community growth.</p>
-                        <div class="showcase-tags">
-                            <span>TypeScript</span>
-                            <span>Node.js</span>
-                            <span>SQLite</span>
+                    <div class="project-images">
+                        <div class="glow-bg"></div>
+                        <div class="image-container">
+                            <img src="assets/Umurage.png" alt="Umurage Showcase" class="main-image">
                         </div>
-                        <a href="https://github.com/UwayoOlga/Umurage" class="btn btn-outline" target="_blank">View
-                            GitHub</a>
                     </div>
                 </div>
 
                 <!-- Project 2: BayesDash -->
-                <div class="project-showcase">
-                    <div class="showcase-img">
-                        <div class="browser-frame">
-                            <div class="browser-dots"><span></span><span></span><span></span></div>
-                            <img src="https://raw.githubusercontent.com/UwayoOlga/BayesDash/main/public/screenshots/main-dashboard.png"
-                                alt="BayesDash">
+                <div class="project-block" style="direction: rtl;">
+                    <div class="project-content" style="direction: ltr;">
+                        <h2>BayesDash</h2>
+                        <div class="subtitle">
+                            📊 A simplified, mathematically rigorous Bayesian A/B testing platform designed for advanced
+                            conversion rate optimization.
                         </div>
-                    </div>
-                    <div class="showcase-content">
-                        <div class="tag">Analytics Dashboard</div>
-                        <h3>BayesDash</h3>
-                        <p>Precision A/B testing powered by Bayesian inference. Beautifully visualized real-time data
-                            for making data-driven decisions.</p>
-                        <div class="showcase-tags">
-                            <span>React</span>
-                            <span>Tailwind</span>
-                            <span>Math.js</span>
-                        </div>
-                        <a href="https://github.com/UwayoOlga/BayesDash" class="btn btn-outline" target="_blank">View
-                            GitHub</a>
-                    </div>
-                </div>
-
-                <!-- Project 3: EFarmerConnect -->
-                <div class="project-showcase">
-                    <div class="showcase-img">
-                        <div class="browser-frame">
-                            <div class="browser-dots"><span></span><span></span><span></span></div>
-                            <img src="https://raw.githubusercontent.com/UwayoOlga/Agriculture-Marketplace-Platform/main/Screenshots/FarmersAgronomicAdvice.png"
-                                alt="EFarmerConnect">
-                        </div>
-                    </div>
-                    <div class="showcase-content">
-                        <div class="tag">AgriTech Marketplace</div>
-                        <h3>EFarmerConnect</h3>
-                        <p>Empowering Rwandan farmers with direct access to markets and agronomic expertise. Scaling
-                            agricultural commerce through digital connectivity.</p>
-                        <div class="showcase-tags">
-                            <span>Django</span>
-                            <span>React</span>
-                            <span>MUI</span>
-                        </div>
-                        <a href="https://github.com/UwayoOlga/Agriculture-Marketplace-Platform" class="btn btn-outline"
-                            target="_blank">View GitHub</a>
-                    </div>
-                </div>
-
-                <!-- Project 4: EscrowChain -->
-                <div class="project-showcase">
-                    <div class="showcase-img">
-                        <div class="browser-frame">
-                            <div class="browser-dots"><span></span><span></span><span></span></div>
-                            <img src="https://raw.githubusercontent.com/UwayoOlga/EscrowChain-Alliance/main/Documentation/screenshots/dashboard.png"
-                                alt="EscrowChain">
-                        </div>
-                    </div>
-                    <div class="showcase-content">
-                        <div class="tag">Blockchain Management</div>
-                        <h3>EscrowChain</h3>
-                        <p>Smart contract enabled rental agreements on Cardano. Solving trust issues through automated,
-                            decentralized escrow systems.</p>
-                        <div class="showcase-tags">
-                            <span>Aiken</span>
-                            <span>Cardano</span>
-                            <span>TypeScript</span>
-                        </div>
-                        <a href="https://github.com/UwayoOlga/EscrowChain-Alliance" class="btn btn-outline"
-                            target="_blank">View GitHub</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- About Section -->
-    <section id="about" style="background: var(--bg-secondary);">
-        <div class="container">
-            <div style="display: flex; gap: 4rem; align-items: center; flex-wrap: wrap;">
-                <div style="flex: 1; min-width: 300px; display: flex; justify-content: center;">
-                    <div
-                        style="position: relative; width: 300px; height: 300px; border-radius: 30px; overflow: hidden; border: 4px solid var(--accent-color); box-shadow: 0 20px 40px rgba(139, 92, 246, 0.2);">
-                        <img src="assets/profile.jpeg" alt="Uwayo Olga"
-                            style="width: 100%; height: 100%; object-fit: cover;">
-                    </div>
-                </div>
-                <div style="flex: 1.5; min-width: 300px;">
-                    <h2 style="font-size: 2.5rem; margin-bottom: 2rem;">About Me</h2>
-                    <p style="color: var(--text-secondary); margin-bottom: 1.5rem;">
-                        I am a developer driven by the intersection of design and technology. I believe that code is
-                        more than just instructions; it's a tool to create meaningful human experiences.
-                    </p>
-                    <p style="color: var(--text-secondary);">
-                        With expertise in modern frameworks and a keen eye for detail, I specialize in building scalable
-                        applications that not only work well but look stunning.
-                    </p>
-
-                    <div
-                        style="margin-top: 2.5rem; background: var(--glass-bg); border: 1px solid var(--glass-border); padding: 2rem; border-radius: 20px;">
-                        <h3 style="margin-bottom: 1rem;">Core Expertise</h3>
-                        <ul style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
-                            <li><span style="color: var(--accent-color);">▹</span> JavaScript (ES6+)</li>
-                            <li><span style="color: var(--accent-color);">▹</span> React / Next.js</li>
-                            <li><span style="color: var(--accent-color);">▹</span> Node.js / Express</li>
-                            <li><span style="color: var(--accent-color);">▹</span> SQL / MongoDB</li>
-                            <li><span style="color: var(--accent-color);">▹</span> UI/UX Design</li>
-                            <li><span style="color: var(--accent-color);">▹</span> Cloud Hosting</li>
+                        <ul class="feature-list">
+                            <li><span class="plus">+</span> Real-time posterior distribution updates</li>
+                            <li><span class="plus">+</span> High-precision mathematical inference engine</li>
+                            <li><span class="plus">+</span> Modern, glassmorphic data visualization</li>
                         </ul>
+
+                        <div class="tech-pills">
+                            <div class="tech-pill">React</div>
+                            <div class="tech-pill">Tailwind CSS</div>
+                            <div class="tech-pill">Math.js</div>
+                            <div class="tech-pill">Chart.js</div>
+                            <div class="tech-pill">Algolia</div>
+                        </div>
+                    </div>
+                    <div class="project-images">
+                        <div class="glow-bg"
+                            style="background: radial-gradient(circle, rgba(59, 130, 246, 0.2) 0%, transparent 70%);">
+                        </div>
+                        <div class="slideshow" id="bayesdash-slideshow">
+                            <div class="slideshow-track">
+                                <div class="slide active">
+                                    <img src="assets/bayesian.png" alt="BayesDash Main" class="main-image">
+                                </div>
+                                <div class="slide">
+                                    <img src="assets/baysian2.png" alt="BayesDash View 2" class="main-image">
+                                </div>
+                            </div>
+                            <button class="slide-btn slide-prev" aria-label="Previous slide">&#8592;</button>
+                            <button class="slide-btn slide-next" aria-label="Next slide">&#8594;</button>
+                            <div class="slide-dots">
+                                <span class="dot active"></span>
+                                <span class="dot"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3: Streamline Dashboard -->
+                <div class="project-block">
+                    <div class="project-content">
+                        <h2>Streamline</h2>
+                        <div class="subtitle">
+                            A web-based task management dashboard for organizing tasks and projects with a clean,
+                            user-friendly interface.
+                        </div>
+                        <ul class="feature-list">
+                            <li><span class="plus">+</span> Task creation, editing, and deletion</li>
+                            <li><span class="plus">+</span> Project management with color coding</li>
+                            <li><span class="plus">+</span> Calendar & list views with PDF report generation</li>
+                            <li><span class="plus">+</span> Task filtering by priority, due date & project</li>
+                        </ul>
+
+                        <div class="tech-pills">
+                            <div class="tech-pill">HTML5</div>
+                            <div class="tech-pill">CSS3</div>
+                            <div class="tech-pill">JavaScript</div>
+                            <div class="tech-pill">FullCalendar</div>
+                            <div class="tech-pill">jsPDF</div>
+                            <div class="tech-pill">Firebase</div>
+                            <div class="tech-pill">Netlify</div>
+                        </div>
+
+                        <div style="margin-top: 2rem; display: flex; gap: 1rem; flex-wrap: wrap;">
+                            <a href="https://streamlinewebapp.netlify.app/" target="_blank" class="book-call-btn"
+                                style="display: inline-block; padding: 0.5rem 1.5rem; font-size: 0.85rem;">Live Demo</a>
+                            <a href="https://github.com/UwayoOlga/to_do_list_webapp.git" target="_blank"
+                                class="book-call-btn"
+                                style="display: inline-block; padding: 0.5rem 1.5rem; font-size: 0.85rem;">View on
+                                GitHub</a>
+                        </div>
+                    </div>
+                    <div class="project-images">
+                        <div class="glow-bg"
+                            style="background: radial-gradient(circle, rgba(16, 185, 129, 0.15) 0%, transparent 70%);">
+                        </div>
+                        <div class="image-container">
+                            <img src="assets/Streamline.png" alt="Streamline Dashboard" class="main-image">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4: ElectroBill -->
+                <div class="project-block" style="direction: rtl;">
+                    <div class="project-content" style="direction: ltr;">
+                        <h2>ElectroBill</h2>
+                        <div class="subtitle">
+                            A Java Swing-based Electricity Billing System simulating a real-world business flow for managing customer accounts, meters, billing, payments, and notifications.
+                        </div>
+                        <ul class="feature-list">
+                            <li><span class="plus">+</span> Customer account & meter management</li>
+                            <li><span class="plus">+</span> Automated billing & payment tracking</li>
+                            <li><span class="plus">+</span> Notification system for overdue accounts</li>
+                            <li><span class="plus">+</span> Full business flow simulation</li>
+                        </ul>
+
+                        <div class="tech-pills">
+                            <div class="tech-pill">Java</div>
+                            <div class="tech-pill">Java Swing</div>
+                            <div class="tech-pill">OOP</div>
+                            <div class="tech-pill">MySQL</div>
+                        </div>
+
+                        <div style="margin-top: 2rem;">
+                            <a href="https://github.com/UwayoOlga/Electricity-Billing-System.git" target="_blank" class="book-call-btn"
+                                style="display: inline-block; padding: 0.5rem 1.5rem; font-size: 0.85rem;">View on GitHub</a>
+                        </div>
+                    </div>
+                    <div class="project-images">
+                        <div class="glow-bg"
+                            style="background: radial-gradient(circle, rgba(251, 146, 60, 0.15) 0%, transparent 70%);"></div>
+                        <div class="slideshow" id="electrobill-slideshow">
+                            <div class="slideshow-track">
+                                <div class="slide active">
+                                    <img src="assets/electrobill_image1.png" alt="ElectroBill Screen 1" class="main-image">
+                                </div>
+                                <div class="slide">
+                                    <img src="assets/electrobill_image2.png" alt="ElectroBill Screen 2" class="main-image">
+                                </div>
+                                <div class="slide">
+                                    <img src="assets/electrobill_image3.png" alt="ElectroBill Screen 3" class="main-image">
+                                </div>
+                            </div>
+                            <button class="slide-btn slide-prev" aria-label="Previous slide">&#8592;</button>
+                            <button class="slide-btn slide-next" aria-label="Next slide">&#8594;</button>
+                            <div class="slide-dots">
+                                <span class="dot active"></span>
+                                <span class="dot"></span>
+                                <span class="dot"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about-section">
+            <div class="container" style="display: flex; gap: 4rem; align-items: center;">
+                <div style="flex: 1.2;">
+                    <h2>Solving real problems with technology.</h2>
+                    <p style="color: var(--text-muted); font-size: 1.1rem; line-height: 1.8;">
+                        I am dedicated to building systems that bridge the gap between people and digital utilities.
+                        My experience in Fintech and Blockchain allows me to create tools that help communities grow.
+                    </p>
+                </div>
+                <div style="flex: 0.8;">
+                    <div style="border-radius: 40px; overflow: hidden; border: 1px solid var(--border-dim);">
+                        <img src="assets/profile.jpeg" alt="Uwayo Olga Profile"
+                            style="width: 100%; aspect-ratio: 1 / 1; object-fit: cover; object-position: center top; display: block;">
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Contact Section -->
-    <section id="contact">
-        <div class="container">
-            <div class="contact-content">
-                <h2 class="section-title">Let's Build Something Together</h2>
-                <p style="color: var(--text-secondary); margin-bottom: 2.5rem;">
-                    I'm currently looking for new opportunities. Whether you have a question or just want to say hi,
-                    I'll try my best to get back to you!
-                </p>
-                <a href="mailto:uwayoolga@gmail.com" class="btn btn-primary">Say Hello</a>
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section">
+            <div class="container">
+                <h2>Ready to build?</h2>
+                <p style="color: var(--text-muted); margin-bottom: 4rem;">I'm currently open to new challenges in
+                    Fintech and Agriculture.</p>
+                <a href="mailto:uwayoolga@gmail.com" class="book-call-btn"
+                    style="padding: 1rem 3.5rem; font-size: 1.1rem;">Say Hello</a>
 
-                <div class="social-links">
-                    <a href="https://github.com/UwayoOlga" target="_blank">GitHub</a>
-                    <a href="https://www.linkedin.com/in/olga-uwayo-5a9aa7213/" target="_blank">LinkedIn</a>
-                    <a href="https://www.youtube.com/@olgauwayo" target="_blank">Youtube</a>
+                <div style="margin-top: 8rem; display: flex; justify-content: center; gap: 3rem; flex-wrap: wrap;">
+                    <a href="https://github.com/UwayoOlga" target="_blank"
+                        style="color: var(--text-muted); text-decoration: none; font-weight: 500; transition: color 0.3s;">GitHub</a>
+                    <a href="https://www.linkedin.com/in/olga-uwayo-5a9aa7213/" target="_blank"
+                        style="color: var(--text-muted); text-decoration: none; font-weight: 500; transition: color 0.3s;">LinkedIn</a>
+                    <a href="https://discord.com/users/1204667262553034807" target="_blank"
+                        style="color: var(--text-muted); text-decoration: none; font-weight: 500; transition: color 0.3s;">Discord</a>
+                    <a href="mailto:uwayoolga@gmail.com"
+                        style="color: var(--text-muted); text-decoration: none; font-weight: 500; transition: color 0.3s;">Email</a>
+                    <a href="https://www.youtube.com/@olgauwayo" target="_blank"
+                        style="color: var(--text-muted); text-decoration: none; font-weight: 500; transition: color 0.3s;">YouTube</a>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+
+    </main>
 
     <!-- Footer -->
-    <footer>
+    <footer
+        style="padding: 5rem 0; border-top: 1px solid var(--border-dim); color: var(--text-muted); text-align: center; font-size: 0.9rem;">
         <div class="container">
             <p>&copy; 2026 Uwayo Olga. All rights reserved.</p>
         </div>
     </footer>
 
-    <!-- JavaScript -->
     <script src="script.js"></script>
 </body>
 
