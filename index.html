@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Uwayo Olga | Developer & Designer</title>
+    <title>Uwayo Olga</title>
+    <link rel="icon" href="assets/profile.jpeg" type="image/jpeg">
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -25,11 +26,18 @@
             <div class="nav-pill">
                 <a href="#hero" class="active">Home</a>
                 <a href="#work">Work</a>
+                <a href="#experience">Experience</a>
                 <a href="#about">About</a>
                 <a href="#contact">Contact</a>
             </div>
-            <div class="nav-actions">
-                <a href="https://wa.me/250780613479" target="_blank" class="book-call-btn">Book a Call</a>
+            <div class="nav-actions" style="display: flex; gap: 1.5rem; align-items: center;">
+                <a href="https://www.youtube.com/@olgauwayo" target="_blank" class="youtube-nav btn-magnetic">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="#ff0000">
+                        <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+                    </svg>
+                    <span>YouTube</span>
+                </a>
+                <a href="https://wa.me/250780613479" target="_blank" class="book-call-btn btn-magnetic">Book a Call</a>
             </div>
         </div>
     </header>
@@ -39,20 +47,19 @@
         <div class="hero-glow"></div>
         <section id="hero" class="hero">
             <div class="container hero-container-layout">
-                <div class="hero-content">
+                <div class="hero-content reveal">
                     <div class="status-badge"><span class="badge-dot"></span> Available for projects</div>
                     <h1>Code with <span class="highlight">purpose.</span></h1>
-                    <p>I’m Olga, a Software Developer passionate about building practical, user-focused solutions.
-                        Skilled in coding, problem-solving, and continuously learning new technologies. Interested in
-                        data-driven systems and impactful digital solutions.</p>
+                    <p>Hey, I'm Olga, a Software Developer & Data Analyst. I build data-driven applications that solve real-world problems. I love taking complex business requirements and turning them into clean, fast, and reliable software.</p>
                     <div class="hero-btns">
-                        <a href="#work" class="btn-primary">View My Work</a>
-                        <a href="mailto:uwayoolga@gmail.com" class="btn-secondary">Get in Touch</a>
+                        <a href="#work" class="btn-primary btn-magnetic">View My Work</a>
+                        <a href="mailto:uwayoolga@gmail.com" class="btn-secondary btn-magnetic">Get in Touch</a>
+                        <a href="Uwayo Olga Resume.pdf" target="_blank" class="btn-secondary btn-magnetic" style="border: 1px solid var(--accent-purple); color: var(--accent-purple);">Download CV</a>
                     </div>
                 </div>
                 <div class="hero-visual">
-                    <div class="floating-shape shape-1"></div>
-                    <div class="floating-shape shape-2"></div>
+                    <img src="assets/profile.jpeg" alt="Uwayo Olga Profile" 
+                        style="width: 100%; max-width: 380px; aspect-ratio: 1 / 1; object-fit: cover; object-position: center top; border-radius: 50%; border: 1px solid var(--border-dim); box-shadow: 0 0 80px rgba(139, 92, 246, 0.2); animation: float 6s ease-in-out infinite;">
                 </div>
             </div>
 
@@ -65,9 +72,116 @@
         <!-- Work / Projects Section -->
         <section id="work" class="work-section">
             <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Featured Projects</span>
+                </div>
 
-                <!-- Project 1: Umurage -->
-                <div class="project-block">
+
+                <!-- Project 1: School Feeding Management System -->
+                <div class="project-block reveal">
+                    <div class="project-content">
+                        <h2>School Feeding System</h2>
+                        <div class="subtitle">
+                            A comprehensive web-based management system handling user management, reporting, stock
+                            management, and supplier coordination.
+                        </div>
+                        <ul class="feature-list">
+                            <li><span class="plus">+</span> Stock and supplier tracking</li>
+                            <li><span class="plus">+</span> Automated comprehensive reporting</li>
+                            <li><span class="plus">+</span> Real-time dashboards for districts & schools</li>
+                        </ul>
+
+                        <div class="tech-pills">
+                            <div class="tech-pill">Java</div>
+                            <div class="tech-pill">Spring Boot</div>
+                            <div class="tech-pill">Maven</div>
+                            <div class="tech-pill">React</div>
+                            <div class="tech-pill">TypeScript</div>
+                            <div class="tech-pill">Vite</div>
+                            <div class="tech-pill">Tailwind CSS</div>
+                        </div>
+
+                        <div style="margin-top: 2rem;">
+                            <a href="https://github.com/UwayoOlga/School-Feeding-Management-System.git" target="_blank"
+                                class="book-call-btn btn-magnetic"
+                                style="display: inline-block; padding: 0.5rem 1.5rem; font-size: 0.85rem;">View on
+                                GitHub</a>
+                        </div>
+                    </div>
+                    <div class="project-images">
+                        <div class="glow-bg"
+                            style="background: radial-gradient(circle, rgba(234, 179, 8, 0.15) 0%, transparent 70%);">
+                        </div>
+                        <div class="slideshow" id="schoolfeeding-slideshow">
+                            <div class="slideshow-track">
+                                <div class="slide active">
+                                    <img src="assets/schoolfeeding/landingPage.png" alt="School Feeding Landing"
+                                        class="main-image">
+                                </div>
+                                <div class="slide">
+                                    <img src="assets/schoolfeeding/school dashboard.png" alt="School Dashboard"
+                                        class="main-image">
+                                </div>
+                                <div class="slide">
+                                    <img src="assets/schoolfeeding/district deliveries.png" alt="District Deliveries"
+                                        class="main-image">
+                                </div>
+                                <div class="slide">
+                                    <img src="assets/schoolfeeding/profile.png" alt="Profile" class="main-image">
+                                </div>
+                            </div>
+                            <button class="slide-btn slide-prev" aria-label="Previous slide">&#8592;</button>
+                            <button class="slide-btn slide-next" aria-label="Next slide">&#8594;</button>
+                            <div class="slide-dots">
+                                <span class="dot active"></span>
+                                <span class="dot"></span>
+                                <span class="dot"></span>
+                                <span class="dot"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2: Uber Fares Dataset Analysis -->
+                <div class="project-block reveal" style="direction: rtl;">
+                    <div class="project-content" style="direction: ltr;">
+                        <h2>Uber Fares Analysis</h2>
+                        <div class="subtitle">
+                            An analytical project uncovering insights into fare patterns, ride durations, and
+                            operational metrics.
+                        </div>
+                        <ul class="feature-list">
+                            <li><span class="plus">+</span> Geospatial & statistical data analysis</li>
+                            <li><span class="plus">+</span> Robust data pipeline (cleaning & engineering)</li>
+                            <li><span class="plus">+</span> Interactive Power BI dashboards</li>
+                        </ul>
+
+                        <div class="tech-pills">
+                            <div class="tech-pill">Python</div>
+                            <div class="tech-pill">Pandas</div>
+                            <div class="tech-pill">Power BI</div>
+                            <div class="tech-pill">DAX</div>
+                        </div>
+
+                        <div style="margin-top: 2rem;">
+                            <a href="https://github.com/UwayoOlga/Uber_Fares_Dataset_Analysis.git" target="_blank"
+                                class="book-call-btn btn-magnetic"
+                                style="display: inline-block; padding: 0.5rem 1.5rem; font-size: 0.85rem;">View on
+                                GitHub</a>
+                        </div>
+                    </div>
+                    <div class="project-images">
+                        <div class="glow-bg"
+                            style="background: radial-gradient(circle, rgba(239, 68, 68, 0.15) 0%, transparent 70%);">
+                        </div>
+                        <div class="image-container">
+                            <img src="assets/uberfares.png" alt="Uber Fares Analysis Dashboard" class="main-image">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3: Umurage -->
+                <div class="project-block reveal">
                     <div class="project-content">
                         <h2>Umurage</h2>
                         <div class="subtitle">
@@ -91,7 +205,8 @@
                         </div>
 
                         <div style="margin-top: 2rem;">
-                            <a href="https://github.com/UwayoOlga/Umurage.git" target="_blank" class="book-call-btn"
+                            <a href="https://github.com/UwayoOlga/Umurage.git" target="_blank"
+                                class="book-call-btn btn-magnetic"
                                 style="display: inline-block; padding: 0.5rem 1.5rem; font-size: 0.85rem;">View on
                                 GitHub</a>
                         </div>
@@ -104,8 +219,8 @@
                     </div>
                 </div>
 
-                <!-- Project 2: BayesDash -->
-                <div class="project-block" style="direction: rtl;">
+                <!-- Project 4: BayesDash -->
+                <div class="project-block reveal" style="direction: rtl;">
                     <div class="project-content" style="direction: ltr;">
                         <h2>BayesDash</h2>
                         <div class="subtitle">
@@ -149,8 +264,8 @@
                     </div>
                 </div>
 
-                <!-- Project 3: Streamline Dashboard -->
-                <div class="project-block">
+                <!-- Project 5: Streamline Dashboard -->
+                <div class="project-block reveal">
                     <div class="project-content">
                         <h2>Streamline</h2>
                         <div class="subtitle">
@@ -175,10 +290,11 @@
                         </div>
 
                         <div style="margin-top: 2rem; display: flex; gap: 1rem; flex-wrap: wrap;">
-                            <a href="https://streamlinewebapp.netlify.app/" target="_blank" class="book-call-btn"
+                            <a href="https://streamlinewebapp.netlify.app/" target="_blank"
+                                class="book-call-btn btn-magnetic"
                                 style="display: inline-block; padding: 0.5rem 1.5rem; font-size: 0.85rem;">Live Demo</a>
                             <a href="https://github.com/UwayoOlga/to_do_list_webapp.git" target="_blank"
-                                class="book-call-btn"
+                                class="book-call-btn btn-magnetic"
                                 style="display: inline-block; padding: 0.5rem 1.5rem; font-size: 0.85rem;">View on
                                 GitHub</a>
                         </div>
@@ -193,12 +309,57 @@
                     </div>
                 </div>
 
-                <!-- Project 4: ElectroBill -->
-                <div class="project-block" style="direction: rtl;">
+                <!-- Project 6: BudgetBuddy -->
+                <div class="project-block reveal" style="direction: rtl;">
                     <div class="project-content" style="direction: ltr;">
+                        <h2>BudgetBuddy</h2>
+                        <div class="subtitle">
+                            A smart expense & budget tracker for students, built with Flutter and Hive. It features
+                            offline storage, budget alerts, and automated financial reports.
+                        </div>
+                        <ul class="feature-list">
+                            <li><span class="plus">+</span> Expense Logging & Categorization</li>
+                            <li><span class="plus">+</span> Budget Setting & Real-time Alerts</li>
+                            <li><span class="plus">+</span> Offline-first with Hive local storage</li>
+                        </ul>
+
+                        <div class="tech-pills">
+                            <div class="tech-pill">Flutter</div>
+                            <div class="tech-pill">Dart</div>
+                            <div class="tech-pill">Hive (NoSQL)</div>
+                        </div>
+
+                        <div style="margin-top: 2rem;">
+                            <a href="https://github.com/UwayoOlga/BudgetBuddy.git" target="_blank"
+                                class="book-call-btn btn-magnetic"
+                                style="display: inline-block; padding: 0.5rem 1.5rem; font-size: 0.85rem;">View on
+                                GitHub</a>
+                        </div>
+                    </div>
+                    <div class="project-images">
+                        <div class="glow-bg"
+                            style="background: radial-gradient(circle, rgba(168, 85, 247, 0.15) 0%, transparent 70%);">
+                        </div>
+                        <div
+                            style="position: relative; z-index: 1; display: flex; gap: 1rem; justify-content: center; align-items: center;">
+                            <img src="assets/bugdet buddy/loginscreen.jpeg" alt="BudgetBuddy Login" class="mobile-img"
+                                style="transition: transform 0.3s; transform: rotate(-2deg);">
+                            <img src="assets/bugdet buddy/expenses.jpeg" alt="BudgetBuddy Add Expense"
+                                class="mobile-img"
+                                style="transition: transform 0.3s; transform: scale(1.05) translateY(-10px); z-index: 2; box-shadow: 0 30px 60px rgba(0,0,0,0.6);">
+                            <img src="assets/bugdet buddy/report.jpeg" alt="BudgetBuddy Reports" class="mobile-img"
+                                style="transition: transform 0.3s; transform: rotate(2deg);">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 7: ElectroBill -->
+                <div class="project-block reveal">
+                    <div class="project-content">
                         <h2>ElectroBill</h2>
                         <div class="subtitle">
-                            A Java Swing-based Electricity Billing System simulating a real-world business flow for managing customer accounts, meters, billing, payments, and notifications.
+                            A Java Swing-based Electricity Billing System simulating a real-world business flow for
+                            managing customer accounts, meters, billing, payments, and notifications.
                         </div>
                         <ul class="feature-list">
                             <li><span class="plus">+</span> Customer account & meter management</li>
@@ -215,23 +376,29 @@
                         </div>
 
                         <div style="margin-top: 2rem;">
-                            <a href="https://github.com/UwayoOlga/Electricity-Billing-System.git" target="_blank" class="book-call-btn"
-                                style="display: inline-block; padding: 0.5rem 1.5rem; font-size: 0.85rem;">View on GitHub</a>
+                            <a href="https://github.com/UwayoOlga/Electricity-Billing-System.git" target="_blank"
+                                class="book-call-btn btn-magnetic"
+                                style="display: inline-block; padding: 0.5rem 1.5rem; font-size: 0.85rem;">View on
+                                GitHub</a>
                         </div>
                     </div>
                     <div class="project-images">
                         <div class="glow-bg"
-                            style="background: radial-gradient(circle, rgba(251, 146, 60, 0.15) 0%, transparent 70%);"></div>
+                            style="background: radial-gradient(circle, rgba(251, 146, 60, 0.15) 0%, transparent 70%);">
+                        </div>
                         <div class="slideshow" id="electrobill-slideshow">
                             <div class="slideshow-track">
                                 <div class="slide active">
-                                    <img src="assets/electrobill_image1.png" alt="ElectroBill Screen 1" class="main-image">
+                                    <img src="assets/electrobill_image1.png" alt="ElectroBill Screen 1"
+                                        class="main-image">
                                 </div>
                                 <div class="slide">
-                                    <img src="assets/electrobill_image2.png" alt="ElectroBill Screen 2" class="main-image">
+                                    <img src="assets/electrobill_image2.png" alt="ElectroBill Screen 2"
+                                        class="main-image">
                                 </div>
                                 <div class="slide">
-                                    <img src="assets/electrobill_image3.png" alt="ElectroBill Screen 3" class="main-image">
+                                    <img src="assets/electrobill_image3.png" alt="ElectroBill Screen 3"
+                                        class="main-image">
                                 </div>
                             </div>
                             <button class="slide-btn slide-prev" aria-label="Previous slide">&#8592;</button>
@@ -245,30 +412,286 @@
                     </div>
                 </div>
 
+                <!-- Project 8: CheckMe -->
+                <div class="project-block reveal" style="direction: rtl;">
+                    <div class="project-content" style="direction: ltr;">
+                        <h2>CheckMe</h2>
+                        <div class="subtitle">
+                            A simple and elegant Todo List App allowing users to add, manage, search, filter, and
+                            track their tasks effortlessly.
+                        </div>
+                        <ul class="feature-list">
+                            <li><span class="plus">+</span> Task creation, filtering, and searching</li>
+                            <li><span class="plus">+</span> Intuitive mobile user interface</li>
+                            <li><span class="plus">+</span> Track deadlines and due dates</li>
+                        </ul>
+
+                        <div class="tech-pills">
+                            <div class="tech-pill">Flutter</div>
+                            <div class="tech-pill">Dart</div>
+                            <div class="tech-pill">Android Studio</div>
+                        </div>
+
+                        <div style="margin-top: 2rem;">
+                            <a href="https://github.com/UwayoOlga/CheckMe_App.git" target="_blank"
+                                class="book-call-btn btn-magnetic"
+                                style="display: inline-block; padding: 0.5rem 1.5rem; font-size: 0.85rem;">View on
+                                GitHub</a>
+                        </div>
+                    </div>
+                    <div class="project-images">
+                        <div class="glow-bg"
+                            style="background: radial-gradient(circle, rgba(14, 165, 233, 0.15) 0%, transparent 70%);">
+                        </div>
+                        <div
+                            style="position: relative; z-index: 1; display: flex; gap: 1rem; justify-content: center; align-items: center;">
+                            <img src="assets/checkme/dashboard.jpeg" alt="CheckMe Dashboard" class="mobile-img"
+                                style="transition: transform 0.3s; transform: rotate(-2deg);">
+                            <img src="assets/checkme/addToDo.jpeg" alt="CheckMe Add Task" class="mobile-img"
+                                style="transition: transform 0.3s; transform: scale(1.05) translateY(-10px); z-index: 2; box-shadow: 0 30px 60px rgba(0,0,0,0.6);">
+                            <img src="assets/checkme/DueDate.jpeg" alt="CheckMe Due Date" class="mobile-img"
+                                style="transition: transform 0.3s; transform: rotate(2deg);">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 9: RwandaCast -->
+                <div class="project-block reveal">
+                    <div class="project-content">
+                        <h2>RwandaCast</h2>
+                        <div class="subtitle">
+                            A functional weather application pulling real-time data from OpenWeatherMap to practice
+                            asynchronous JavaScript and API integration.
+                        </div>
+                        <ul class="feature-list">
+                            <li><span class="plus">+</span> Real-time weather forecasting</li>
+                            <li><span class="plus">+</span> Third-party API integration (OpenWeatherMap)</li>
+                            <li><span class="plus">+</span> Dynamic DOM manipulation & data fetching</li>
+                        </ul>
+
+                        <div class="tech-pills">
+                            <div class="tech-pill">HTML</div>
+                            <div class="tech-pill">CSS</div>
+                            <div class="tech-pill">JavaScript</div>
+                            <div class="tech-pill">OpenWeatherMap API</div>
+                        </div>
+
+                        <div style="margin-top: 2rem; display: flex; gap: 1rem; flex-wrap: wrap;">
+                            <a href="https://rwandacast.netlify.app/" target="_blank" class="book-call-btn btn-magnetic"
+                                style="display: inline-block; padding: 0.5rem 1.5rem; font-size: 0.85rem;">Live Demo</a>
+                            <a href="https://github.com/UwayoOlga/Weather-App.git" target="_blank"
+                                class="book-call-btn btn-magnetic"
+                                style="display: inline-block; padding: 0.5rem 1.5rem; font-size: 0.85rem;">View on
+                                GitHub</a>
+                        </div>
+                    </div>
+                    <div class="project-images">
+                        <div class="glow-bg"
+                            style="background: radial-gradient(circle, rgba(56, 189, 248, 0.15) 0%, transparent 70%);">
+                        </div>
+                        <div class="slideshow" id="weather-slideshow">
+                            <div class="slideshow-track">
+                                <div class="slide active">
+                                    <img src="assets/weatherapp2 (1).png" alt="Weather App Screen 1" class="main-image">
+                                </div>
+                                <div class="slide">
+                                    <img src="assets/weatherapp2 (2).png" alt="Weather App Screen 2" class="main-image">
+                                </div>
+                            </div>
+                            <button class="slide-btn slide-prev" aria-label="Previous slide">&#8592;</button>
+                            <button class="slide-btn slide-next" aria-label="Next slide">&#8594;</button>
+                            <div class="slide-dots">
+                                <span class="dot active"></span>
+                                <span class="dot"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 10: EFarmerConnect -->
+                <div class="project-block reveal" style="direction: rtl;">
+                    <div class="project-content" style="direction: ltr;">
+                        <h2>EFarmerConnect</h2>
+                        <div class="subtitle">
+                            Rwanda's Agriculture Marketplace Platform connecting farmers with buyers to ensure fair
+                            pricing and efficient supply chain management.
+                        </div>
+                        <ul class="feature-list">
+                            <li><span class="plus">+</span> Direct farmer-to-buyer marketplace</li>
+                            <li><span class="plus">+</span> Secure JWT Authentication & DRF Backend</li>
+                            <li><span class="plus">+</span> Modern UI with MUI & Ant Design</li>
+                        </ul>
+
+                        <div class="tech-pills">
+                            <div class="tech-pill">React (Vite)</div>
+                            <div class="tech-pill">MUI</div>
+                            <div class="tech-pill">Ant Design</div>
+                            <div class="tech-pill">Django 5.1</div>
+                            <div class="tech-pill">DRF</div>
+                            <div class="tech-pill">JWT Auth</div>
+                        </div>
+
+                        <div style="margin-top: 2rem;">
+                            <a href="https://github.com/UwayoOlga/Agriculture-Marketplace-Platform.git" target="_blank"
+                                class="book-call-btn btn-magnetic"
+                                style="display: inline-block; padding: 0.5rem 1.5rem; font-size: 0.85rem;">View on
+                                GitHub</a>
+                        </div>
+                    </div>
+                    <div class="project-images">
+                        <div class="glow-bg"
+                            style="background: radial-gradient(circle, rgba(34, 197, 94, 0.15) 0%, transparent 70%);">
+                        </div>
+                        <div class="slideshow" id="efarmer-slideshow">
+                            <div class="slideshow-track">
+                                <div class="slide active">
+                                    <img src="assets/efarmer1.png" alt="EFarmerConnect Dashboard" class="main-image">
+                                </div>
+                                <div class="slide">
+                                    <img src="assets/efarmer2.png" alt="EFarmerConnect Product View" class="main-image">
+                                </div>
+                            </div>
+                            <button class="slide-btn slide-prev" aria-label="Previous slide">&#8592;</button>
+                            <button class="slide-btn slide-next" aria-label="Next slide">&#8594;</button>
+                            <div class="slide-dots">
+                                <span class="dot active"></span>
+                                <span class="dot"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </section>
 
         <!-- About Section -->
-        <section id="about" class="about-section">
+        <section id="about" class="about-section reveal">
             <div class="container" style="display: flex; gap: 4rem; align-items: center;">
                 <div style="flex: 1.2;">
-                    <h2>Solving real problems with technology.</h2>
+                    <h2>I just love building things.</h2>
                     <p style="color: var(--text-muted); font-size: 1.1rem; line-height: 1.8;">
-                        I am dedicated to building systems that bridge the gap between people and digital utilities.
-                        My experience in Fintech and Blockchain allows me to create tools that help communities grow.
+                        I started programming because I love the process of figuring things out. Whether I'm building a
+                        mobile app from scratch using Flutter or architecting a robust backend with Spring Boot and
+                        Django, my goal is always the same: write clean code that solves actual problems. I thrive on
+                        diving into a new codebase and shipping features that users care about.
                     </p>
+
+                    <div class="skills-group-container reveal"
+                        style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; margin-top: 3rem;">
+                        <!-- Backend -->
+                        <div class="skills-group">
+                            <h3
+                                style="font-size: 0.85rem; color: var(--accent-purple); text-transform: uppercase; letter-spacing: 0.15em; margin-bottom: 1rem; text-align: center;">
+                                Backend</h3>
+                            <div style="display: flex; flex-direction: column; gap: 0.75rem;">
+                                <div class="skill-card">Java</div>
+                                <div class="skill-card">Spring Boot</div>
+                                <div class="skill-card">Django</div>
+                                <div class="skill-card">Python</div>
+                            </div>
+                        </div>
+
+                        <!-- Frontend/Mobile -->
+                        <div class="skills-group">
+                            <h3
+                                style="font-size: 0.85rem; color: var(--accent-purple); text-transform: uppercase; letter-spacing: 0.15em; margin-bottom: 1rem; text-align: center;">
+                                Frontend</h3>
+                            <div style="display: flex; flex-direction: column; gap: 0.75rem;">
+                                <div class="skill-card">React & Next.js</div>
+                                <div class="skill-card">Flutter & Dart</div>
+                                <div class="skill-card">TypeScript</div>
+                                <div class="skill-card">Tailwind CSS</div>
+                            </div>
+                        </div>
+
+                        <!-- Data/Tools -->
+                        <div class="skills-group">
+                            <h3
+                                style="font-size: 0.85rem; color: var(--accent-purple); text-transform: uppercase; letter-spacing: 0.15em; margin-bottom: 1rem; text-align: center;">
+                                Data</h3>
+                            <div style="display: flex; flex-direction: column; gap: 0.75rem;">
+                                <div class="skill-card">PostgreSQL</div>
+                                <div class="skill-card">Firebase</div>
+                                <div class="skill-card">MySQL</div>
+                                <div class="skill-card">Power BI</div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div style="flex: 0.8;">
                     <div style="border-radius: 40px; overflow: hidden; border: 1px solid var(--border-dim);">
-                        <img src="assets/profile.jpeg" alt="Uwayo Olga Profile"
+                        <img src="assets/profile2.jpeg" alt="Uwayo Olga Profile"
                             style="width: 100%; aspect-ratio: 1 / 1; object-fit: cover; object-position: center top; display: block;">
                     </div>
                 </div>
             </div>
         </section>
+        
+        <!-- Education & Certifications Section -->
+        <section id="experience" class="experience-section reveal" style="padding: 10rem 0; background: rgba(255, 255, 255, 0.01);">
+            <div class="container">
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 6rem;">
+                    
+                    <!-- Left Column: Experience -->
+                    <div>
+                        <h2 style="margin-bottom: 3rem;">Experience</h2>
+                        
+                        <div class="exp-item" style="margin-bottom: 3rem;">
+                            <h3 style="color: var(--text-main); font-size: 1.1rem; margin-bottom: 0.5rem;">AUCA Innovation Center</h3>
+                            <div style="color: var(--accent-purple); font-weight: 500; font-size: 0.9rem; margin-bottom: 1rem;">Full Stack Engineer | Aug 2024 - Present</div>
+                            <ul style="color: var(--text-muted); line-height: 1.6; list-style: none; padding-left: 0;">
+                                <li style="margin-bottom: 0.5rem;"><span style="color: var(--accent-purple); margin-right: 0.5rem;">•</span> Built internal IT systems supporting Rwanda's school feeding policy.</li>
+                                <li style="margin-bottom: 0.5rem;"><span style="color: var(--accent-purple); margin-right: 0.5rem;">•</span> Developed student performance analytics and automated dropout alerts.</li>
+                                <li><span style="color: var(--accent-purple); margin-right: 0.5rem;">•</span> Led community outreach programs introducing Big Data to secondary schools.</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="exp-item" style="margin-bottom: 3rem;">
+                            <h3 style="color: var(--text-main); font-size: 1.1rem; margin-bottom: 0.5rem;">Caystard Group Ltd</h3>
+                            <div style="color: var(--accent-purple); font-weight: 500; font-size: 0.9rem; margin-bottom: 1rem;">Software Developer Intern | June 2025 - Nov 2025</div>
+                            <ul style="color: var(--text-muted); line-height: 1.6; list-style: none; padding-left: 0;">
+                                <li style="margin-bottom: 0.5rem;"><span style="color: var(--accent-purple); margin-right: 0.5rem;">•</span> Designed and deployed 4+ critical features for high-traffic Android apps.</li>
+                                <li style="margin-bottom: 0.5rem;"><span style="color: var(--accent-purple); margin-right: 0.5rem;">•</span> Optimized performance reducing app load time by 15%.</li>
+                                <li><span style="color: var(--accent-purple); margin-right: 0.5rem;">•</span> Achieved 97% test coverage for responsive UI components.</li>
+                            </ul>
+                        </div>
+
+                        <div class="exp-item">
+                            <h3 style="color: var(--text-main); font-size: 1.1rem; margin-bottom: 0.5rem;">TheGYM</h3>
+                            <div style="color: var(--accent-purple); font-weight: 500; font-size: 0.9rem; margin-bottom: 1rem;">Software Development Trainee | Nov 2024 - Dec 2025</div>
+                            <p style="color: var(--text-muted); line-height: 1.6;">Participating in a 12-month traineeship working on real-world projects under international mentorship.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Right Column: Education & Volunteering -->
+                    <div>
+                        <h2 style="margin-bottom: 3rem;">Education</h2>
+                        
+                        <div class="exp-item" style="margin-bottom: 3rem;">
+                            <h3 style="color: var(--text-main); font-size: 1.1rem; margin-bottom: 0.5rem;">Adventist University of Central Africa</h3>
+                            <div style="color: var(--accent-purple); font-weight: 500; font-size: 0.9rem; margin-bottom: 1rem;">B.Sc. in Software Engineering | 2026</div>
+                            <p style="color: var(--text-muted); line-height: 1.6;">Relevant Coursework: OOP, Data Structures, System Design, Full-Stack Development.</p>
+                        </div>
+
+                        <h2 style="margin-bottom: 3rem; margin-top: 4rem;">Volunteering</h2>
+                        
+                        <div class="exp-item" style="margin-bottom: 2rem;">
+                            <h3 style="color: var(--text-main); font-size: 1.1rem; margin-bottom: 0.5rem;">Rwanda Computing Olympiad</h3>
+                            <div style="color: var(--accent-purple); font-weight: 500; font-size: 0.9rem; margin-bottom: 0.5rem;">Data Structures Coach</div>
+                        </div>
+
+                        <div class="exp-item">
+                            <h3 style="color: var(--text-main); font-size: 1.1rem; margin-bottom: 0.5rem;">Idebate Rwanda</h3>
+                            <div style="color: var(--accent-purple); font-weight: 500; font-size: 0.9rem; margin-bottom: 0.5rem;">Public Speaking Coach</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
 
         <!-- Contact Section -->
-        <section id="contact" class="contact-section">
+        <section id="contact" class="contact-section reveal">
             <div class="container">
                 <h2>Ready to build?</h2>
                 <p style="color: var(--text-muted); margin-bottom: 4rem;">I'm currently open to new challenges in
@@ -300,6 +723,11 @@
             <p>&copy; 2026 Uwayo Olga. All rights reserved.</p>
         </div>
     </footer>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="back-to-top" aria-label="Back to top">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 15l-6-6-6 6"/></svg>
+    </button>
 
     <script src="script.js"></script>
 </body>

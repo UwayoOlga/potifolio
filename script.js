@@ -1,3 +1,13 @@
+// Scroll effect for header
+const header = document.querySelector('header');
+window.addEventListener('scroll', () => {
+    if (window.scrollY > 50) {
+        header.classList.add('scrolled');
+    } else {
+        header.classList.remove('scrolled');
+    }
+});
+
 // Intersection Observer for highlighting active nav pill link
 const observerOptions = {
     threshold: 0.1,
@@ -90,3 +100,40 @@ function initSlideshow(slideshowEl) {
 
 document.querySelectorAll('.slideshow').forEach(initSlideshow);
 
+// --- Reveal Animations ---
+const revealObserverOptions = {
+    threshold: 0.15,
+    rootMargin: '0px 0px -50px 0px'
+};
+
+const revealObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('revealed');
+            revealObserver.unobserve(entry.target); // Only reveal once
+        }
+    });
+}, revealObserverOptions);
+
+document.querySelectorAll('.reveal').forEach(el => {
+    revealObserver.observe(el);
+});
+
+
+// --- Back to Top Logic ---
+const backToTopBtn = document.getElementById('backToTop');
+
+window.addEventListener('scroll', () => {
+    if (window.scrollY > 500) {
+        backToTopBtn.classList.add('visible');
+    } else {
+        backToTopBtn.classList.remove('visible');
+    }
+});
+
+backToTopBtn.addEventListener('click', () => {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
+});
