@@ -7,6 +7,27 @@
     <title>Uwayo Olga</title>
     <link rel="icon" href="assets/profile.jpeg" type="image/jpeg">
 
+    <!-- Primary Meta Tags -->
+    <meta name="title" content="Uwayo Olga | Full Stack Developer">
+    <meta name="description"
+        content="Hey, I’m Olga, a full-stack software developer. I build web applications and turn ideas into clean, reliable software.">
+
+    <!-- Open Graph / LinkedIn / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://uwayoolga.vercel.app/">
+    <meta property="og:title" content="Uwayo Olga | Full Stack Developer">
+    <meta property="og:description"
+        content="Hey, I’m Olga, a full-stack software developer. I build web applications and turn ideas into clean, reliable software.">
+    <meta property="og:image" content="https://uwayoolga.vercel.app/assets/profile.jpeg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://uwayoolga.vercel.app/">
+    <meta property="twitter:title" content="Uwayo Olga | Full Stack Developer">
+    <meta property="twitter:description"
+        content="Hey, I’m Olga, a full-stack software developer. I build web applications and turn ideas into clean, reliable software.">
+    <meta property="twitter:image" content="https://uwayoolga.vercel.app/assets/profile.jpeg">
+
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,7 +38,9 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
+<body class="dark-mode"> <!-- Starting in dark mode for premium feel -->
+    <div class="custom-cursor"></div>
+    <div class="scroll-progress"></div>
 
     <!-- Header Section (1:1 Replica) -->
     <header>
@@ -32,15 +55,36 @@
             </div>
             <div class="nav-actions" style="display: flex; gap: 1.5rem; align-items: center;">
                 <button id="themeToggle" class="mode-toggle" aria-label="Toggle Theme">
-                    <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display: block;"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
-                    <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display: none;"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+                    <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" style="display: block;">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                    <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" style="display: none;">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
                 </button>
                 <a href="https://www.youtube.com/@olgauwayo" target="_blank" class="youtube-nav btn-magnetic">
                     <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="#ff0000">
-                        <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+                        <path
+                            d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
                     </svg>
                     <span>YouTube</span>
                 </a>
+                <div id="currentTime" class="nav-actions"
+                    style="color: var(--text-muted); font-size: 0.8rem; font-family: monospace; opacity: 0.6;">
+                    KGL | 12:00 PM
+                </div>
                 <a href="https://wa.me/250780613479" target="_blank" class="book-call-btn btn-magnetic">Book a Call</a>
             </div>
         </div>
@@ -53,14 +97,16 @@
             <div class="container hero-container-layout">
                 <div class="hero-content reveal">
                     <div class="status-badge"><span class="badge-dot"></span> Available for projects</div>
-                    <h1>Code with <span class="highlight">purpose.</span></h1>
-                    <p>Hey, I'm Olga, a Software Developer & Data Analyst. I build data-driven applications that solve real-world problems. I love taking complex business requirements and turning them into clean, fast, and reliable software.</p>
+                    <h1>Full Stack <span class="highlight">Developer</span></h1>
+                    <p>Hey, I’m Olga, a full-stack software developer. I enjoy building web applications and turning
+                        ideas into clean, reliable software. I like working on real projects and improving how things
+                        work through code.</p>
                     <div class="hero-btns">
                         <a href="Uwayo Olga Resume.pdf" target="_blank" class="cv-btn btn-magnetic">Download CV</a>
                     </div>
                 </div>
                 <div class="hero-visual">
-                    <img src="assets/profile.jpeg" alt="Uwayo Olga Profile" 
+                    <img src="assets/profile.jpeg" alt="Uwayo Olga Profile"
                         style="width: 100%; max-width: 380px; aspect-ratio: 1 / 1; object-fit: cover; object-position: center top; border-radius: 50%; border: 1px solid var(--border-dim); box-shadow: 0 0 80px rgba(139, 92, 246, 0.2); animation: float 6s ease-in-out infinite; margin-left: 2rem;">
                 </div>
             </div>
@@ -572,10 +618,13 @@
                 <div style="flex: 1.2;">
                     <h2>I just love building things.</h2>
                     <p style="color: var(--text-muted); font-size: 1.1rem; line-height: 1.8;">
-                        I started programming because I love the process of figuring things out. Whether I'm building a
-                        mobile app from scratch using Flutter or architecting a robust backend with Spring Boot and
-                        Django, my goal is always the same: write clean code that solves actual problems. I thrive on
-                        diving into a new codebase and shipping features that users care about.
+                        I started programming at Gashora Girls Academy, and at first it felt difficult and confusing.
+                        At university, I kept practicing through platforms like LeetCode and Codeforces, which helped me
+                        improve step by step. I joined programs like AUCA Innovation Center and TheGym where I began
+                        building real projects, from a personal website to AI-based systems. Working with other
+                        developers and getting feedback has helped me grow and stay motivated. Now, I’m focused on
+                        finishing my degree and improving my skills in full-stack Web development, building real-world
+                        applications and working with modern technologies.
                     </p>
 
                     <div class="skills-group-container reveal"
@@ -583,7 +632,7 @@
                         <!-- Backend -->
                         <div class="skills-group">
                             <h3
-                                style="font-size: 0.85rem; color: var(--accent-purple); text-transform: uppercase; letter-spacing: 0.15em; margin-bottom: 1rem; text-align: center;">
+                                style="font-size: 0.85rem; color: var(--accent-purple); text-transform: uppercase; letter-spacing: 0.15em; margin-bottom: 1rem; text-align: left;">
                                 Backend</h3>
                             <div style="display: flex; flex-direction: column; gap: 0.75rem;">
                                 <div class="skill-card">Java</div>
@@ -596,7 +645,7 @@
                         <!-- Frontend/Mobile -->
                         <div class="skills-group">
                             <h3
-                                style="font-size: 0.85rem; color: var(--accent-purple); text-transform: uppercase; letter-spacing: 0.15em; margin-bottom: 1rem; text-align: center;">
+                                style="font-size: 0.85rem; color: var(--accent-purple); text-transform: uppercase; letter-spacing: 0.15em; margin-bottom: 1rem; text-align: left;">
                                 Frontend</h3>
                             <div style="display: flex; flex-direction: column; gap: 0.75rem;">
                                 <div class="skill-card">React & Next.js</div>
@@ -609,7 +658,7 @@
                         <!-- Data/Tools -->
                         <div class="skills-group">
                             <h3
-                                style="font-size: 0.85rem; color: var(--accent-purple); text-transform: uppercase; letter-spacing: 0.15em; margin-bottom: 1rem; text-align: center;">
+                                style="font-size: 0.85rem; color: var(--accent-purple); text-transform: uppercase; letter-spacing: 0.15em; margin-bottom: 1rem; text-align: left;">
                                 Data</h3>
                             <div style="display: flex; flex-direction: column; gap: 0.75rem;">
                                 <div class="skill-card">PostgreSQL</div>
@@ -628,63 +677,93 @@
                 </div>
             </div>
         </section>
-        
+
         <!-- Education & Certifications Section -->
-        <section id="experience" class="experience-section reveal" style="padding: 10rem 0; background: rgba(255, 255, 255, 0.01);">
+        <section id="experience" class="experience-section reveal"
+            style="padding: 10rem 0; background: rgba(255, 255, 255, 0.01);">
             <div class="container">
                 <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 6rem;">
-                    
+
                     <!-- Left Column: Experience -->
                     <div>
                         <h2 style="margin-bottom: 3rem;">Experience</h2>
-                        
+
                         <div class="exp-item" style="margin-bottom: 3rem;">
-                            <h3 style="color: var(--text-main); font-size: 1.1rem; margin-bottom: 0.5rem;">AUCA Innovation Center</h3>
-                            <div style="color: var(--accent-purple); font-weight: 500; font-size: 0.9rem; margin-bottom: 1rem;">Full Stack Engineer | Aug 2024 - Present</div>
+                            <h3 style="color: var(--text-main); font-size: 1.1rem; margin-bottom: 0.5rem;">AUCA
+                                Innovation Center</h3>
+                            <div
+                                style="color: var(--accent-purple); font-weight: 500; font-size: 0.9rem; margin-bottom: 1rem;">
+                                Full Stack Engineer | Aug 2024 - Present</div>
                             <ul style="color: var(--text-muted); line-height: 1.6; list-style: none; padding-left: 0;">
-                                <li style="margin-bottom: 0.5rem;"><span style="color: var(--accent-purple); margin-right: 0.5rem;">•</span> Built internal IT systems supporting Rwanda's school feeding policy.</li>
-                                <li style="margin-bottom: 0.5rem;"><span style="color: var(--accent-purple); margin-right: 0.5rem;">•</span> Developed student performance analytics and automated dropout alerts.</li>
-                                <li><span style="color: var(--accent-purple); margin-right: 0.5rem;">•</span> Led community outreach programs introducing Big Data to secondary schools.</li>
+                                <li style="margin-bottom: 0.5rem;"><span
+                                        style="color: var(--accent-purple); margin-right: 0.5rem;">•</span> Built
+                                    internal IT systems supporting Rwanda's school feeding policy.</li>
+                                <li style="margin-bottom: 0.5rem;"><span
+                                        style="color: var(--accent-purple); margin-right: 0.5rem;">•</span> Developed
+                                    student performance analytics and automated dropout alerts.</li>
+                                <li><span style="color: var(--accent-purple); margin-right: 0.5rem;">•</span> Led
+                                    community outreach programs introducing Big Data to secondary schools.</li>
                             </ul>
                         </div>
-                        
+
                         <div class="exp-item" style="margin-bottom: 3rem;">
-                            <h3 style="color: var(--text-main); font-size: 1.1rem; margin-bottom: 0.5rem;">Caystard Group Ltd</h3>
-                            <div style="color: var(--accent-purple); font-weight: 500; font-size: 0.9rem; margin-bottom: 1rem;">Software Developer Intern | June 2025 - Nov 2025</div>
+                            <h3 style="color: var(--text-main); font-size: 1.1rem; margin-bottom: 0.5rem;">Caystard
+                                Group Ltd</h3>
+                            <div
+                                style="color: var(--accent-purple); font-weight: 500; font-size: 0.9rem; margin-bottom: 1rem;">
+                                Software Developer Intern | June 2025 - Nov 2025</div>
                             <ul style="color: var(--text-muted); line-height: 1.6; list-style: none; padding-left: 0;">
-                                <li style="margin-bottom: 0.5rem;"><span style="color: var(--accent-purple); margin-right: 0.5rem;">•</span> Designed and deployed 4+ critical features for high-traffic Android apps.</li>
-                                <li style="margin-bottom: 0.5rem;"><span style="color: var(--accent-purple); margin-right: 0.5rem;">•</span> Optimized performance reducing app load time by 15%.</li>
-                                <li><span style="color: var(--accent-purple); margin-right: 0.5rem;">•</span> Achieved 97% test coverage for responsive UI components.</li>
+                                <li style="margin-bottom: 0.5rem;"><span
+                                        style="color: var(--accent-purple); margin-right: 0.5rem;">•</span> Designed and
+                                    deployed 4+ critical features for high-traffic Android apps.</li>
+                                <li style="margin-bottom: 0.5rem;"><span
+                                        style="color: var(--accent-purple); margin-right: 0.5rem;">•</span> Optimized
+                                    performance reducing app load time by 15%.</li>
+                                <li><span style="color: var(--accent-purple); margin-right: 0.5rem;">•</span> Achieved
+                                    97% test coverage for responsive UI components.</li>
                             </ul>
                         </div>
 
                         <div class="exp-item">
                             <h3 style="color: var(--text-main); font-size: 1.1rem; margin-bottom: 0.5rem;">TheGYM</h3>
-                            <div style="color: var(--accent-purple); font-weight: 500; font-size: 0.9rem; margin-bottom: 1rem;">Software Development Trainee | Nov 2024 - Dec 2025</div>
-                            <p style="color: var(--text-muted); line-height: 1.6;">Participating in a 12-month traineeship working on real-world projects under international mentorship.</p>
+                            <div
+                                style="color: var(--accent-purple); font-weight: 500; font-size: 0.9rem; margin-bottom: 1rem;">
+                                Software Development Trainee | Nov 2024 - Dec 2025</div>
+                            <p style="color: var(--text-muted); line-height: 1.6;">Participating in a 12-month
+                                traineeship working on real-world projects under international mentorship.</p>
                         </div>
                     </div>
-                    
+
                     <!-- Right Column: Education & Volunteering -->
                     <div>
                         <h2 style="margin-bottom: 3rem;">Education</h2>
-                        
+
                         <div class="exp-item" style="margin-bottom: 3rem;">
-                            <h3 style="color: var(--text-main); font-size: 1.1rem; margin-bottom: 0.5rem;">Adventist University of Central Africa</h3>
-                            <div style="color: var(--accent-purple); font-weight: 500; font-size: 0.9rem; margin-bottom: 1rem;">B.Sc. in Software Engineering | 2026</div>
-                            <p style="color: var(--text-muted); line-height: 1.6;">Relevant Coursework: OOP, Data Structures, System Design, Full-Stack Development.</p>
+                            <h3 style="color: var(--text-main); font-size: 1.1rem; margin-bottom: 0.5rem;">Adventist
+                                University of Central Africa</h3>
+                            <div
+                                style="color: var(--accent-purple); font-weight: 500; font-size: 0.9rem; margin-bottom: 1rem;">
+                                B.Sc. in Software Engineering | 2026</div>
+                            <p style="color: var(--text-muted); line-height: 1.6;">Relevant Coursework: OOP, Data
+                                Structures, System Design, Full-Stack Development.</p>
                         </div>
 
                         <h2 style="margin-bottom: 3rem; margin-top: 4rem;">Volunteering</h2>
-                        
+
                         <div class="exp-item" style="margin-bottom: 2rem;">
-                            <h3 style="color: var(--text-main); font-size: 1.1rem; margin-bottom: 0.5rem;">Rwanda Computing Olympiad</h3>
-                            <div style="color: var(--accent-purple); font-weight: 500; font-size: 0.9rem; margin-bottom: 0.5rem;">Data Structures Coach</div>
+                            <h3 style="color: var(--text-main); font-size: 1.1rem; margin-bottom: 0.5rem;">Rwanda
+                                Computing Olympiad</h3>
+                            <div
+                                style="color: var(--accent-purple); font-weight: 500; font-size: 0.9rem; margin-bottom: 0.5rem;">
+                                Data Structures Coach</div>
                         </div>
 
                         <div class="exp-item">
-                            <h3 style="color: var(--text-main); font-size: 1.1rem; margin-bottom: 0.5rem;">Idebate Rwanda</h3>
-                            <div style="color: var(--accent-purple); font-weight: 500; font-size: 0.9rem; margin-bottom: 0.5rem;">Public Speaking Coach</div>
+                            <h3 style="color: var(--text-main); font-size: 1.1rem; margin-bottom: 0.5rem;">Idebate
+                                Rwanda</h3>
+                            <div
+                                style="color: var(--accent-purple); font-weight: 500; font-size: 0.9rem; margin-bottom: 0.5rem;">
+                                Public Speaking Coach</div>
                         </div>
                     </div>
                 </div>
@@ -696,22 +775,71 @@
         <section id="contact" class="contact-section reveal">
             <div class="container">
                 <h2>Ready to build?</h2>
-                <p style="color: var(--text-muted); margin-bottom: 4rem;">I'm currently open to new challenges in
-                    Fintech and Agriculture.</p>
+                <p style="color: var(--text-muted); margin-bottom: 4rem;">I'm always looking for the next challenge:
+                    let's build something ambitious together.</p>
                 <a href="mailto:uwayoolga@gmail.com" class="book-call-btn"
                     style="padding: 1rem 3.5rem; font-size: 1.1rem;">Say Hello</a>
 
-                <div style="margin-top: 8rem; display: flex; justify-content: center; gap: 3rem; flex-wrap: wrap;">
-                    <a href="https://github.com/UwayoOlga" target="_blank"
-                        style="color: var(--text-muted); text-decoration: none; font-weight: 500; transition: color 0.3s;">GitHub</a>
+                <div class="social-grid">
+                    <a href="https://github.com/UwayoOlga" target="_blank" class="social-card btn-magnetic"
+                        id="github-link">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path
+                                d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4">
+                            </path>
+                            <path d="M9 18c-4.51 2-5-2-7-2"></path>
+                        </svg>
+                        <span>GitHub</span>
+                    </a>
                     <a href="https://www.linkedin.com/in/olga-uwayo-5a9aa7213/" target="_blank"
-                        style="color: var(--text-muted); text-decoration: none; font-weight: 500; transition: color 0.3s;">LinkedIn</a>
+                        class="social-card btn-magnetic" id="linkedin-link">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z">
+                            </path>
+                            <rect width="4" height="12" x="2" y="9"></rect>
+                            <circle cx="4" cy="4" r="2"></circle>
+                        </svg>
+                        <span>LinkedIn</span>
+                    </a>
                     <a href="https://discord.com/users/1204667262553034807" target="_blank"
-                        style="color: var(--text-muted); text-decoration: none; font-weight: 500; transition: color 0.3s;">Discord</a>
-                    <a href="mailto:uwayoolga@gmail.com"
-                        style="color: var(--text-muted); text-decoration: none; font-weight: 500; transition: color 0.3s;">Email</a>
-                    <a href="https://www.youtube.com/@olgauwayo" target="_blank"
-                        style="color: var(--text-muted); text-decoration: none; font-weight: 500; transition: color 0.3s;">YouTube</a>
+                        class="social-card btn-magnetic" id="discord-link">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="9" cy="12" r="1"></circle>
+                            <circle cx="15" cy="12" r="1"></circle>
+                            <path
+                                d="M8.12 15.88 6.57 18.05a.25.25 0 0 1-.41-.12c-.27-1.35-.5-2.71-.62-4.08-.12-1.3-.12-2.6 0-3.9a13 13 0 0 1 1.05-4.47.25.25 0 0 1 .37-.11L10.23 6.9c.58-.12 1.17-.2 1.77-.24s1.19.12 1.77.24l3.27-1.53c.12-.06.27-.01.37.11a13 13 0 0 1 1.05 4.47c.12 1.3.12 2.6 0 3.9-.12 1.37-.35 2.73-.62 4.08a.25.25 0 0 1-.41.12l-1.55-2.17c-.55.12-1.12.18-1.7.21s-1.15-.12-1.7-.21l-3.23 1.53c-.12.06-.27.01-.37-.11Z">
+                            </path>
+                            <path
+                                d="M10.23 6.9c-.39.11-.78.25-1.16.42a12.1 12.1 0 0 0-2.13 1.34c.15 1.48.42 2.94.8 4.38.35.15.71.28 1.08.38l1.41-1.93">
+                            </path>
+                            <path
+                                d="M13.77 6.9c.39.11.78.25 1.16.42a12.1 12.1 0 0 1 2.13 1.34c-.15 1.48-.42 2.94-.8 4.38-.35.15-.71.28-1.08.38l-1.41-1.93">
+                            </path>
+                        </svg>
+                        <span>Discord</span>
+                    </a>
+                    <a href="mailto:uwayoolga@gmail.com" class="social-card btn-magnetic" id="email-link">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <rect width="20" height="16" x="2" y="4" rx="2"></rect>
+                            <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+                        </svg>
+                        <span>Email</span>
+                    </a>
+                    <a href="https://www.youtube.com/@olgauwayo" target="_blank" class="social-card btn-magnetic"
+                        id="youtube-link">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path
+                                d="M2.5 17a24.12 24.12 0 0 1 0-10 2 2 0 0 1 2-2 58.38 58.38 0 0 1 15 0 2 2 0 0 1 2 2 24.12 24.12 0 0 1 0 10 2 2 0 0 1-2 2 58.38 58.38 0 0 1-15 0 2 2 0 0 1-2-2Z">
+                            </path>
+                            <path d="m9.75 15.02 5.75-3.02-5.75-3Z"></path>
+                        </svg>
+                        <span>YouTube</span>
+                    </a>
                 </div>
             </div>
         </section>
@@ -728,7 +856,10 @@
 
     <!-- Back to Top Button -->
     <button id="backToTop" class="back-to-top" aria-label="Back to top">
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 15l-6-6-6 6"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M18 15l-6-6-6 6" />
+        </svg>
     </button>
 
     <script src="script.js"></script>

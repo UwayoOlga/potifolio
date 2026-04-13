@@ -1,3 +1,43 @@
+// --- Custom Cursor ---
+const cursor = document.querySelector('.custom-cursor');
+document.addEventListener('mousemove', (e) => {
+    cursor.style.left = e.clientX + 'px';
+    cursor.style.top = e.clientY + 'px';
+});
+
+// Cursor Hover Effects
+const interactiveElements = document.querySelectorAll('a, button, .project-block, .skill-card');
+interactiveElements.forEach(el => {
+    el.addEventListener('mouseenter', () => cursor.classList.add('hovered'));
+    el.addEventListener('mouseleave', () => cursor.classList.remove('hovered'));
+});
+
+// --- Magnetic Buttons ---
+const magneticBtns = document.querySelectorAll('.btn-magnetic');
+magneticBtns.forEach(btn => {
+    btn.addEventListener('mousemove', (e) => {
+        const rect = btn.getBoundingClientRect();
+        const x = e.clientX - rect.left - rect.width / 2;
+        const y = e.clientY - rect.top - rect.height / 2;
+
+        btn.style.transform = `translate(${x * 0.3}px, ${y * 0.3}px)`;
+    });
+
+    btn.addEventListener('mouseleave', () => {
+        btn.style.transform = 'translate(0px, 0px)';
+    });
+});
+
+// --- Scroll Progress Bar ---
+const progressBar = document.querySelector('.scroll-progress');
+window.addEventListener('scroll', () => {
+    const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+    const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+    const scrolled = (winScroll / height) * 100;
+    progressBar.style.width = scrolled + "%";
+});
+
+// --- Original Logic ---
 // Scroll effect for header
 const header = document.querySelector('header');
 window.addEventListener('scroll', () => {
@@ -19,7 +59,7 @@ const observer = new IntersectionObserver((entries) => {
         if (entry.isIntersecting) {
             const id = entry.target.getAttribute('id');
             const navLink = document.querySelector(`.nav-pill a[href="#${id}"]`);
-            
+
             if (navLink) {
                 document.querySelectorAll('.nav-pill a').forEach(a => a.classList.remove('active'));
                 navLink.classList.add('active');
@@ -37,7 +77,7 @@ document.querySelectorAll('section').forEach(section => {
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();
-        
+
         const targetId = this.getAttribute('href');
         const target = document.querySelector(targetId);
         if (target) {
@@ -54,7 +94,7 @@ document.addEventListener('mousemove', (e) => {
     const glows = document.querySelectorAll('.glow-bg');
     const x = (e.clientX / window.innerWidth) * 20 - 10;
     const y = (e.clientY / window.innerHeight) * 20 - 10;
-    
+
     glows.forEach(glow => {
         glow.style.transform = `translate(${x}px, ${y}px)`;
     });
@@ -63,10 +103,10 @@ document.addEventListener('mousemove', (e) => {
 // --- Slideshow ---
 function initSlideshow(slideshowEl) {
     const slides = slideshowEl.querySelectorAll('.slide');
-    const dots   = slideshowEl.querySelectorAll('.dot');
-    const prev   = slideshowEl.querySelector('.slide-prev');
-    const next   = slideshowEl.querySelector('.slide-next');
-    let current  = 0;
+    const dots = slideshowEl.querySelectorAll('.dot');
+    const prev = slideshowEl.querySelector('.slide-prev');
+    const next = slideshowEl.querySelector('.slide-next');
+    let current = 0;
     let timer;
 
     function goTo(index) {
@@ -172,4 +212,18 @@ if (themeToggleBtn) {
         localStorage.setItem('theme', theme);
     });
 }
-
+// --- Current Time Logic ---
+function updateCurrentTime() {
+    const timeElement = document.getElementById('currentTime');
+    if (timeElement) {
+        const time = new Date().toLocaleTimeString('en-US', {
+            hour: 'numeric',
+            minute: '2-digit',
+            hour12: true,
+            timeZone: 'Africa/Kigali'
+        });
+        timeElement.textContent = `KGL | ${time}`;
+    }
+}
+setInterval(updateCurrentTime, 1000);
+updateCurrentTime();
