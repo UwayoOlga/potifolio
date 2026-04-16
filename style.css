@@ -21,6 +21,12 @@
   --cursor-size: 20px;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
 /* Custom Cursor */
 .custom-cursor {
   width: var(--cursor-size);
@@ -181,6 +187,20 @@ header.scrolled {
   color: var(--text-main);
   background: rgba(255, 255, 255, 0.08);
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Ensure touch targets are accessible (min 44px for nav/buttons on mobile) */
+@media (max-width: 480px) {
+  .nav-pill a {
+    padding: 0.75rem 1rem !important;
+    min-height: 44px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .cv-btn, .book-call-btn, .social-card {
+    min-height: 44px;
+  }
 }
 
 .nav-actions {
@@ -399,14 +419,22 @@ header.scrolled {
     width: 110px;
   }
 
-  .nav-pill a {
-    padding: 0.5rem 0.75rem;
-    font-size: 0.75rem;
+  .nav-pill {
+    padding: 0.25rem;
+    gap: 0.25rem;
   }
 
-  .tech-pill {
-    padding: 0.5rem 0.75rem;
-    font-size: 0.75rem;
+  .nav-pill a {
+    padding: 0.4rem 0.6rem;
+    font-size: 0.7rem;
+  }
+
+  :root {
+    --section-py: 3rem;
+  }
+
+  .project-content h2 {
+    font-size: 1.8rem;
   }
 }
 
