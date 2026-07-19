@@ -53,7 +53,7 @@
                 <a href="#about">About</a>
                 <a href="#contact">Contact</a>
             </div>
-            <div class="nav-actions" style="display: flex; gap: 1.5rem; align-items: center;">
+            <div class="nav-actions">
                 <button id="themeToggle" class="mode-toggle" aria-label="Toggle Theme">
                     <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
                         fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
@@ -88,11 +88,9 @@
 
     <!-- Hero Section -->
     <main>
-        <div class="hero-glow"></div>
         <section id="hero" class="hero">
             <div class="container hero-container-layout">
                 <div class="hero-content reveal">
-                    <div class="status-badge"><span class="badge-dot"></span> Available for projects</div>
                     <h1>Full Stack <span class="highlight">Developer</span></h1>
                     <p>Hey, I’m Olga, a full-stack software developer. I enjoy building web applications and turning
                         ideas into clean, reliable software. I like working on real projects and improving how things
@@ -102,8 +100,7 @@
                     </div>
                 </div>
                 <div class="hero-visual">
-                    <img src="assets/profile.jpeg" alt="Uwayo Olga Profile" loading="lazy"
-                        style="width: 100%; max-width: 380px; aspect-ratio: 1 / 1; object-fit: cover; object-position: center top; border-radius: 50%; border: 1px solid var(--border-dim); box-shadow: 0 0 80px rgba(139, 92, 246, 0.2); animation: float 6s ease-in-out infinite; margin-left: 2rem;">
+                    <img src="assets/profile.jpeg" alt="Uwayo Olga Profile" loading="lazy" class="hero-profile-img">
                 </div>
             </div>
 
@@ -621,8 +618,8 @@
 
         <!-- About Section -->
         <section id="about" class="about-section reveal">
-            <div class="container" style="display: flex; gap: 4rem; align-items: center;">
-                <div style="flex: 1.2;">
+            <div class="container about-container">
+                <div class="about-text-col">
                     <h2>I just love building things.</h2>
                     <p style="color: var(--text-muted); font-size: 1.1rem; line-height: 1.8;">
                         I started programming at Gashora Girls Academy, and at first it felt difficult and confusing.
@@ -634,8 +631,7 @@
                         applications and working with modern technologies.
                     </p>
 
-                    <div class="skills-group-container reveal"
-                        style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; margin-top: 3rem;">
+                    <div class="skills-group-container reveal">
                         <!-- Backend -->
                         <div class="skills-group">
                             <h3
@@ -676,7 +672,7 @@
                         </div>
                     </div>
                 </div>
-                <div style="flex: 0.8;">
+                <div class="about-img-col">
                     <div style="border-radius: 40px; overflow: hidden; border: 1px solid var(--border-dim);">
                         <img src="assets/profile2.jpeg" alt="Uwayo Olga Profile" loading="lazy"
                             style="width: 100%; aspect-ratio: 1 / 1; object-fit: cover; object-position: center top; display: block;">
@@ -686,10 +682,9 @@
         </section>
 
         <!-- Education & Certifications Section -->
-        <section id="experience" class="experience-section reveal"
-            style="padding: 10rem 0; background: rgba(255, 255, 255, 0.01);">
+        <section id="experience" class="experience-section reveal">
             <div class="container">
-                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 6rem;">
+                <div class="experience-grid">
 
                     <!-- Left Column: Experience -->
                     <div>
