@@ -13,6 +13,18 @@
   ───────────────────────────────────────────── */
   const KB = [
     {
+      tags: ['hi', 'hy', 'hello', 'hey', 'greetings', 'morning', 'afternoon', 'evening', 'sup', 'yo', 'howdy'],
+      answer: `Hello! 👋 How can I help you today? Feel free to ask about Olga's experience, technical skills, projects, education, or how to get in touch!`
+    },
+    {
+      tags: ['thanks', 'thank you', 'merci', 'cool', 'awesome', 'great', 'nice', 'perfect'],
+      answer: `You're welcome! 😊 Let me know if you have any other questions about Olga's work or experience.`
+    },
+    {
+      tags: ['who are you', 'what are you', 'bot', 'concierge', 'ai'],
+      answer: `I'm Olga's AI Concierge! I'm here to help recruiters, hiring managers, and visitors quickly learn about her software engineering background, skills, and portfolio projects.`
+    },
+    {
       tags: ['who', 'olga', 'about', 'introduce', 'overview', 'summary'],
       answer: `Olga is a Full-Stack Software Developer based in Kigali, Rwanda, currently finishing her B.Sc. in Software Engineering at the Adventist University of Central Africa (AUCA), graduating November 2026. She builds production-grade web and mobile applications, has shipped work used by 5,000+ active users, and is passionate about turning ideas into clean, reliable software.`
     },
@@ -83,8 +95,8 @@
      Scores KB entries by keyword overlap with query
   ───────────────────────────────────────────── */
   function retrieve(query) {
-    const q = query.toLowerCase().replace(/[?!.,]/g, '');
-    const tokens = q.split(/\s+/);
+    const q = query.toLowerCase().replace(/[?!.,;:()]/g, ' ').trim();
+    const tokens = q.split(/\s+/).filter(Boolean);
 
     let best = null;
     let bestScore = 0;
@@ -92,18 +104,28 @@
     KB.forEach(entry => {
       let score = 0;
       entry.tags.forEach(tag => {
-        if (q.includes(tag)) score += 3;
+        const tagLower = tag.toLowerCase();
+        // Exact phrase match
+        if (q === tagLower) score += 10;
+        else if (q.includes(tagLower) && tagLower.length > 2) score += 5;
+
+        // Token match
         tokens.forEach(tok => {
-          if (tag.includes(tok) || tok.includes(tag)) score += 1;
+          if (tok === tagLower) {
+            score += 5;
+          } else if (tok.length > 3 && (tagLower.includes(tok) || tok.includes(tagLower))) {
+            score += 2;
+          }
         });
       });
+
       if (score > bestScore) {
         bestScore = score;
         best = entry;
       }
     });
 
-    return bestScore >= 1 ? best : null;
+    return bestScore >= 2 ? best : null;
   }
 
   /* ─────────────────────────────────────────────
